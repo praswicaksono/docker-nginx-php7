@@ -8,7 +8,7 @@ RUN export LANG=C.UTF-8 && \
 
 RUN export LANG=C.UTF-8 && \
     apt-get install -y nginx php7.0-fpm python-pip git vim nano zip && \
-    apt-get install -y php7.0-pgsql php7.0-mcrypt php7.0-intl php7.0-curl php7.0-gd php7.0-zip php7.0-mbstring php7.0-dom && \
+    apt-get install -y php7.0-pgsql php7.0-mysql php7.0-apcu php7.0-xdebug php7.0-mcrypt php7.0-intl php7.0-curl php7.0-gd php7.0-zip php7.0-mbstring php7.0-dom && \
     pip install supervisor && \
     rm -rf /var/lib/apt/lists/*
 
